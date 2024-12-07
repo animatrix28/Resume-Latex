@@ -1,0 +1,305 @@
+\documentclass[10pt, legalpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, 
+    top=0.7 cm, % reduced top margin
+    bottom=0.3 cm, % reduced bottom margin
+    left=0.5 cm, % reduced left margin
+    right=0.5 cm, % reduced right margin
+    footskip=0.8 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % for link symbol
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Animesh Srivastava's Resume},
+    pdfauthor={Animesh Srivastava},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor,
+    pdfstartview={FitH}
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+% Accessibility settings
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+%font style
+% 1. charter
+% \usepackage{charter}
+% 2. roboto
+% \usepackage[sfdefault]{roboto}
+% 3. Times new roman
+% \usepackage{mathptmx}
+% 4. Arial
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage{helvet}
+% 5. Latin Modern
+% \usepackage{lmodern}
+% 6. Palatino
+% \usepackage{palatino}
+% 7. Sans Serif
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Layout adjustments
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.2 cm
+}{
+    0.2 cm
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% Custom environments
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+}
+\newenvironment{onecolentry}{
+    \par\noindent
+}{
+    \par
+}
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+% Start of document
+\begin{document}
+
+% Header
+\begin{header}
+    \fontsize{21 pt}{21 pt}\selectfont \textbf{Animesh Srivastava}
+\end{header}
+\vspace{3 pt}
+    
+\begin{onecolentry}
+
+    \centering
+    \small
+    \href{mailto:sri.animesh28@gmail.com}{sri.animesh28@gmail.com} | 
+    \href{tel:+1-323-620-7865}{(323)-620-7865} | 
+    \href{https://github.com/animatrix28}{https://github.com/animatrix28} | 
+    \href{https://www.linkedin.com/in/animesh28/}{https://linkedin.com/in/animesh28/} | 
+    Los Angeles, California
+\end{onecolentry}
+
+
+\vspace{-2 pt}
+
+% Summary
+\section{Summary}
+% Full-stack software engineer with 3+ years of experience in designing scalable, distributed systems and optimizing APIs for high-performance applications. Proficient in Python, Java, React, and cloud platforms, with a track record of delivering customer-centric solutions. Skilled at solving complex technical challenges in agile environments while maintaining a focus on innovation and operational excellence.
+\begin{onecolentry}
+
+Aspiring software and data engineer with 3+ years of experience, specializing in scalable data pipelines, distributed systems, APIs, and full-stack web and game development. Proficient in Python, Java, Unity, and React, with expertise in cloud platforms, agile methodologies, and data engineering tools. Skilled at solving technical challenges and driving impactful projects in dynamic teams with innovative problem-solving and operational excellence.
+
+\end{onecolentry}
+
+% Education
+\section{Education}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{University of Southern California,} & August 2023 – May 2025 | Los Angeles, USA \\
+\end{tabularx}
+\vspace{-4.5mm}
+\begin{onecolentry}
+
+    \textbf{Master of Science in Computer Science (GPA: 3.5/4)}
+\end{onecolentry}
+
+\vspace{0.1 cm}
+
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{MS Ramaiah University of Applied Sciences,} & August 2017 – June 2021 | Bangalore, India \\
+\end{tabularx}
+\vspace{-4.5mm}
+\begin{onecolentry}
+
+\textbf{Bachelor of Technology in Computer Science and Engineering (GPA: 3.67/4)}
+\end{onecolentry}
+
+% Experience
+\section{Professional Experience}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Software Developer Engineer Intern, Redvest} & May 2024 – October 2024 | Los Angeles, USA \\
+\end{tabularx}
+\vspace{-5mm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed and implemented scalable financial \textbf{data pipelines} using \textbf{Python multithreading} and \textbf{Firebase}, reducing \textbf{distributed systems}' data processing latency by \textbf{40\%}.
+        \item Built a \textbf{React}-based analytics dashboard to visualize real-time financial metrics, improving operational efficiency for cross-functional teams.
+        \item Led a team to streamline development workflows, managing 30+ repository merges on \textbf{Github} and delivering projects on schedule.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.0 cm}
+
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Backend Developer, Tata Consultancy Services (TCS)} & January 2021 – July 2023 | Bangalore, India \\
+\end{tabularx}
+\vspace{-4.0mm}
+
+\begin{onecolentry}
+
+\textbf{Client: American Express(AMEX)} - Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Travel and Lifestyle Services}
+\vspace{-1mm}
+    \begin{highlights}
+        \item Enhanced regulatory compliance by \textbf{reducing data risks} by\textbf{ 50\%} using \textbf{OFSAA} and \textbf{PL/SQL} to validate and migrate 30+ guidelines onto IDL local servers.
+        \item Automated report retrieval, data comparison, and discrepancy resolution with \textbf{Java}, saving 20 hours per week of manual work. Ensured fault-tolerant server communication and migration using \textbf{Putty} and \textbf{PL/SQL}.
+        \item Designed efficient \textbf{ETL pipelines} using \textbf{PySpark}, \textbf{Python}, and \textbf{PL/SQL} for data handling, performing transformations and aggregations with \textbf{MongoDB} queries for optimized processing and 100\% accuracy.
+        \item Resolved \textbf{MySQL job failures} and implemented\textbf{ JSON} path validation for precise file ingestion, improving data processing reliability and accuracy.
+        \item Developed\textbf{ 5 backend} features to enhance user experience and monitored \textbf{SQL jobs} in the production environment to ensure reliability and minimize downtime.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.0 cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Mobile App Developer Intern, Ungrezi} & September 2020 – November 2020 | Bangalore, India \\
+\end{tabularx}
+\vspace{-5mm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed intuitive \textbf{authentication} and flashcard pages using \textbf{Figma} designs and implemented them into functional user interfaces with \textbf{Flutter}, enhancing user experience and app performance by 30\%.
+        \item Led the deployment of \textbf{Firebase} Authentication \textbf{API} and integrated Google Sign-In for the Flipping app, which increased account access speeds by 60\%.
+    \end{highlights}
+\end{onecolentry}
+
+% Projects
+\section{Projects}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \href{https://animatrix-usstockportfolio.wl.r.appspot.com/}{\textbf{US Stock Market Portfolio}  | React.js, Express.js, Node.js, Bootstrap, MongoDB, Android, GCP {\scriptsize \faLink}} & March 2024 – March 2024 \\
+\end{tabularx}
+\vspace{-5mm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Built a \textbf{responsive}, full-stack stock market analysis platform leveraging \textbf{React.js}, \textbf{Bootstrap}, and \textbf{Node.js}, enabling seamless integration of real-time stock data with \textbf{MongoDB}.
+        \item Implemented \textbf{RESTful APIs} in the backend for real-time updates on price history, market trends, and user-specific portfolio tracking, enhancing usability and system reliability.
+        \item Developed an \textbf{Android} application '\textbf{Stocks}' in \textbf{Java} using the same \textbf{Node.js} backend. 
+        \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.0 cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \href{https://animatrix-stock-details.uc.r.appspot.com/}{\textbf{US Stock Details}  | JavaScript, jQuery, Flask, Python, Ajax, HTML \& CSS, GCP {\scriptsize \faLink}} & February 2024 – February 2024 \\
+\end{tabularx}
+\vspace{-5mm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed a \textbf{dynamic website} for US stock information utilizing \textbf{JavaScript}, \textbf{jQuery}, \textbf{HTML}, and \textbf{CSS} to facilitate real-time stock data retrieval.
+        \item Implemented \textbf{Flask} to interact with the \textbf{Finnhub API} on the back end, enabling efficient processing of stock details based on user inputs.
+        \item Utilized \textbf{AJAX} in \textbf{JavaScript} to seamlessly update the front end, providing users with live stock information including news, charts, company details, and prices, thereby \textbf{enhancing} the \textbf{user experience}.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.0 cm}
+
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \href{https://ieeexplore.ieee.org/document/9824468}{\textbf{Trip Planner and Recommender using Flutter and Tensorflow,} | Flutter, TensorFlow, Python} & January 2021 – June 2021 \\ 
+    \textbf{\textit{\href{https://ieeexplore.ieee.org/document/9824468}{"Published research paper at IEEE" {\scriptsize \faLink}}}}  \\
+\end{tabularx}
+\vspace{-3mm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Scraped TripAdvisor data \& utilized \textbf{ETL} techniques \& developed a trip-planning \textbf{recommendation system} using \textbf{TensorFlow} and \textbf{collaborative} \& \textbf{content-based} filtering techniques, delivering highly personalized suggestions based on user preferences.
+        \item Designed and deployed a \textbf{Flutter}-based app with a seamless interface, integrating the recommendation model to provide tailored suggestions based on individual preferences and interests. Incorporated user feedback for a cohesive and visually appealing experience. \href{https://drive.google.com/file/d/1SqoTyr8t58EnMv1kMaBpob6GxTtL8CKe/view}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.0 cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \href{https://ieeexplore.ieee.org/document/9417881}{\textbf{A Conceptual Model Simulation to Detect and Report City Traffic Violations Using Distributed Intelligent Agents, "Published research paper at IEEE"} | Java, MySQL {\scriptsize \faLink}} & February 2020 – July 2020 \\
+\end{tabularx}
+\vspace{-3mm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed a simulation model in \textbf{Java} for detecting and reporting traffic violations in real-time using the \textbf{multi-threading} concept, integrating it with \textbf{MySQL} for scalable database support enabling automatic updating of traffic violation records.
+    \end{highlights}
+\end{onecolentry}
+
+% Skills
+\section{Skills}
+\begin{onecolentry}
+
+\textbf{Programming Languages:} Java, Dart, C, C++, Python, JavaScript \\
+\textbf{Mobile Application Development:} Flutter, Java, React Native, Android Studio \\
+\textbf{Web Development, Libraries/Framework:} HTML, CSS, XML, Node.js \& ExpressJS, Angular, React.js, Flask, Django, jQuery \\
+\textbf{Game Development:} Unity, C\# \\
+\textbf{Database \& Tools:} MySQL, PL/SQL, Firebase, Hive \& Spark, OFSAA, Hadoop, MongoDB, DynamoDB \\
+\textbf{Cloud Platforms:} AWS, Google Cloud, Git, Photoshop, Figma, Jira \\
+\textbf{Methodologies:} Agile, Scrum, CI/CD Pipelines
+
+\end{onecolentry}
+
+% Footer Section
+\vspace{0.4 cm}
+\begin{onecolentry}
+    \centering
+    {1/1}
+\end{onecolentry}
+
+\end{document}
