@@ -1,12 +1,12 @@
-\documentclass[10pt, legalpaper]{article}
+\documentclass[10pt, letterpaper]{article}
 
 % Packages:
 \usepackage[
     ignoreheadfoot, 
     top=0.7 cm, % reduced top margin
-    bottom=0.3 cm, % reduced bottom margin
-    left=0.5 cm, % reduced left margin
-    right=0.5 cm, % reduced right margin
+    bottom=0.5 cm, % reduced bottom margin
+    left=0.6 cm, % reduced left margin
+    right=0.6 cm, % reduced right margin
     footskip=0.8 cm,
 ]{geometry}
 \usepackage{titlesec}
@@ -20,7 +20,6 @@
 \usepackage[
     pdftitle={Animesh Srivastava's Resume},
     pdfauthor={Animesh Srivastava},
-    pdfcreator={LaTeX with RenderCV},
     colorlinks=true,
     urlcolor=primaryColor,
     pdfstartview={FitH}
@@ -59,8 +58,9 @@
 % 6. Palatino
 % \usepackage{palatino}
 % 7. Sans Serif
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage[default]{lato}
 
 % Layout adjustments
 \raggedright
@@ -124,7 +124,7 @@
 \begin{header}
     \fontsize{21 pt}{21 pt}\selectfont \textbf{Animesh Srivastava}
 \end{header}
-\vspace{3 pt}
+\vspace{2 pt}
     
 % \begin{onecolentry}
 
@@ -140,10 +140,10 @@
     \centering
     \small
     \href{mailto:animeshs2808@gmail.com}{animeshs2808@gmail.com} \quad | \quad 
-    \href{tel:+1-323-620-7865}{(323)-620-7865} \quad | \quad 
-    \href{https://github.com/animatrix28}{https://github.com/animatrix28} \quad | \quad 
-    \href{https://www.linkedin.com/in/animesh28/}{https://linkedin.com/in/animesh28/} \quad | \quad 
-    \href{https://animatrix28.github.io/}{https://animatrix28.github.io/} \quad | \quad
+    \href{tel:+1-323-620-7865}{+1(323)-620-7865} \quad | \quad 
+    \href{https://github.com/animatrix28}{GitHub} \quad | \quad 
+    \href{https://www.linkedin.com/in/animesh28/}{LinkedIn} \quad | \quad 
+    \href{https://animatrix28.github.io/}{Portfolio} \quad | \quad
     Los Angeles, California
 \end{onecolentry}
 
@@ -158,7 +158,7 @@
 %     Los Angeles, California
 % \end{onecolentry}
 
-\vspace{5 pt}
+\vspace{-1 mm}
 
 % Summary
 % \section{Summary}
@@ -173,53 +173,55 @@
 \section{Education}
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{University of Southern California,} & August 2023 – May 2025 | Los Angeles, USA \\
+    \textbf{University of Southern California} | Los Angeles, USA & August 2023 – May 2025 \\
 \end{tabularx}
 \vspace{-4.5mm}
 \begin{onecolentry}
 
-    \textbf{Master of Science in Computer Science (GPA: 3.6/4)}
+    Master of Science in Computer Science (GPA: 3.6/4)
 \end{onecolentry}
 
 \vspace{0.1 cm}
 
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{MS Ramaiah University of Applied Sciences,} & August 2017 – June 2021 | Bangalore, India \\
+    \textbf{MS Ramaiah University of Applied Sciences} | Bangalore, India & August 2017 – June 2021 \\
 \end{tabularx}
 \vspace{-4.5mm}
 \begin{onecolentry}
 
-\textbf{Bachelor of Technology in Computer Science and Engineering (GPA: 3.67/4)}
+Bachelor of Technology in Computer Science and Engineering (GPA: 3.67/4)
 \end{onecolentry}
+% \vspace{-1 mm}
 
 % Experience
-\section{Professional Experience}
+\section{Work Experience}
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Software Engineer and Researcher, Easley Dunn Productions} & June 2025 – Present | Los Angeles, USA \\
+    \textbf{Software Engineer and Researcher, Easley Dunn Productions} | Los Angeles, USA & June 2025 – Present \\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-4mm}
 \begin{onecolentry}
     \begin{highlights}
-    \item Developed an interactive VR surgical training prototype in \textbf{Unity} using \textbf{C\#} and the \textbf{XR Interaction Toolkit}, implementing an immersive \textbf{floating UI} (diegetic UI) with event-driven logic for tool selection, equipping, and \textbf{physics-based} handling (\textbf{Rigidbody} manipulation).
-    \item Engineered a session record-and-replay system in \textbf{C\#} for training assessment, with \textbf{JSON} data persistence to save and load user progress.
-    \item Scripted unique \textbf{C\#} interaction logic for virtual tools (scalpel, drill, marker) to enable procedural drawing and object interaction on \textbf{3D anatomical models} in a \textbf{VR environment}.
-    \item Designed and debugged the tool state management lifecycle for seamless \textbf{User Experience (UX)}, correctly parenting objects to controllers and managing tool-swapping logic. 
+    \item Built a VR surgical-training prototype in \textbf{Unity (C\#)} with session record-and-replay using a JSON-based format for trainer analytics. 
+    \item Designed diegetic floating UI with interaction analytics, increasing UI engagement by approx 20\%, and improving task flow.
+    
+    % Designed physics-driven interactions and a diegetic Floating UI to make tools behave naturally, improving task completion rates in user studies.
+    % \item Developed a floating UI for quick surgical tool switching, improving ease-of-use and overall training experience. 
     \end{highlights}
 \end{onecolentry}
 \vspace{0.0 cm}
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Software Engineer(Founding Engineer), Redvest} & May 2024 – October 2024 | Los Angeles, USA \\
+    \textbf{Full Stack Software Engineer(Founding Engineer), Redvest} | Los Angeles, USA & May 2024 – October 2024 \\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-4mm}
 
 \begin{onecolentry}
     \begin{highlights}
-        \item Designed and implemented scalable financial \textbf{data pipelines} using \textbf{Python multithreading} and \textbf{Firebase}, reducing data latency by \textbf{40\%}.
-        \item Built a \textbf{React}-based analytics dashboard for real-time financial metric visualization, improving operational efficiency.
-        \item Led MVP feature development aligned with investor and user requirements, managing \textbf{30+ GitHub} PR merges to ensure timely delivery.
-        \item Presented Redvest at \textbf{TechCrunch Disrupt 2024}, increasing platform visibility and driving early user adoption.
+        \item Reduced financial data latency by 40\% by building \textbf{multithreaded Python data pipelines} and optimizing \textbf{Firebase} ingestion. 
+        \item Built and deployed internal analytics dashboards using \textbf{React} and \textbf{Node/Python} backend services, containerized with \textbf{Docker} and orchestrated on \textbf{AWS EKS} to support scalable KPI monitoring, reducing manual data checks by \textbf{60\%}.
+        % Built and deployed a full-stack analytics dashboard (\textbf{React} frontend, \textbf{Node}/\textbf{Python} backend) on \textbf{AWS}, containerized services with \textbf{docker}, and arranged them using \textbf{EKS} to support scalable KPI monitoring, reducing manual data checks by 60\%.
+        \item Led core feature development across \textbf{30+ Github PRs}, boosting user engagement by 20\% \& presented at \textbf{TechCrunch Disrupt 2024}.
     \end{highlights}
 \end{onecolentry}
 
@@ -227,14 +229,14 @@
 
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Backend Developer, American Express}(via TCS) & January 2021 – July 2023 | Bangalore, India \\
+    \textbf{Software Engineer, American Express}(via TCS) | Bangalore, India & January 2021 – July 2023 \\
 \end{tabularx}
-\vspace{-4.0mm}
+\vspace{-4mm}
 
 \begin{onecolentry}
 
-Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Travel and Lifestyle Services}
-\vspace{-1mm}
+Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Travel and Lifestyle Services}
+% \vspace{-1mm}
     \begin{highlights}
         % \item Enhanced regulatory compliance by \textbf{reducing data risks} by\textbf{ 50\%} using \textbf{OFSAA} and \textbf{PL/SQL} to validate and migrate 30+ guidelines onto IDL local servers.
         % \item Automated report retrieval, data comparison, and discrepancy resolution with \textbf{Java}, saving 20 hours per week of manual work. Ensured fault-tolerant server communication and migration using \textbf{Putty} and \textbf{PL/SQL}.
@@ -242,30 +244,64 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Trave
         % \item Resolved \textbf{MySQL job failures} and implemented\textbf{ JSON} path validation for precise file ingestion, improving data processing reliability and accuracy.
         % \item Developed\textbf{ 5 backend} features to enhance user experience and monitored \textbf{SQL jobs} in the production environment to ensure reliability and minimize downtime.
         
-    \item Improved compliance by \textbf{reducing data risk by 50\%} through \textbf{OFSAA} and \textbf{PL/SQL} validation and migration of 30+ regulatory guidelines.
-    \item Automated report retrieval, data comparison, and discrepancy resolution with \textbf{Java}, saving 20 hours per week of manual work.
-    \item Developed \textbf{ETL} pipelines using \textbf{PySpark}, \textbf{Python}, and \textbf{PL/SQL}, integrating with \textbf{MongoDB} for 100\% accuracy in data processing.
-    \item Fixed \textbf{MySQL} job failures and implemented \textbf{JSON} path validation to enhance data ingestion precision.
-    \item Built and deployed 5 backend features to support business logic and improve customer experience.
-    \item Monitored \textbf{SQL} jobs in production to ensure system reliability and minimize downtime.
+    % \item Automated PL/SQL and OFSAA validation and migrated 30+ regulatory guidelines, \textbf{reducing data risk by 50\%}. 
+    % \item Built \textbf{ETL} pipelines with \textbf{PySpark} and \textbf{Python} integrated with \textbf{MongoDB} ensuring 100\% data load accuracy and resolved recurring \textbf{MySQL} job failures. 
+    % % \item Automated reporting and reconciliation tasks in \textbf{Java}, saving \textbf{approx 20} manual hours per week. 
+    % \item Developed 5 internal \textbf{REST APIs} (50K+ daily transactions) and automated reporting tasks in \textbf{Java} saving \textbf{20 manual hours/week}.
+    % \item Added unit tests and monitored \textbf{SQL} jobs in production to maintain reliability and minimize downtime.
+
+    % \item Built data ingestion and transformation pipelines using \textbf{Python}, \textbf{PySpark}, \textbf{PL/SQL}, and \textbf{SQL}, processing multi-source financial data with 100\% daily load accuracy across \textbf{OFSAA}, \textbf{MySQL}, and \textbf{MongoDB}.
+    % \item Automated RBI-compliant and data localization validations by migrating and validating \textbf{30+ regulatory guidelines}, reducing compliance risk by 50\% and eliminating manual reconciliation.
+    % \item Designed and optimized \textbf{PL/SQL} queries, \textbf{ETL} scripts, and data quality checks across \textbf{Hive} and \textbf{Oracle}, improving data consistency across Silver, Gold, and Platinum production layers.
+    % \item Developed and supported internal \textbf{REST APIs} and automation tools in \textbf{Java}, handling 50K+ daily transactions and saving 20+ engineering hours per week through automated reporting and monitoring.
+    % \item Improved production reliability by automating ingestion monitoring, report comparisons, and \textbf{SQL} job validation, \textbf{reducing recurring job failures} and minimizing downtime in critical financial workflows.
+
+    \item Built data ingestion and transformation pipelines using \textbf{Python}, \textbf{PySpark}, \textbf{PL/SQL}, and \textbf{SQL}, processing multi-source financial data with \textbf{100\% daily load accuracy} across OFSAA, MySQL, and MongoDB.
+    \item Automated \textbf{RBI-compliant} data localization validations by migrating \textbf{30+ regulatory guidelines}, reducing compliance risk by \textbf{50\%}.
+    \item Optimized \textbf{PL/SQL}, \textbf{ETL}, \& data quality checks across \textbf{Hive} \& \textbf{Oracle}, improving consistency across Silver, Gold, \& Platinum production layers.
+    \item Developed internal \textbf{REST APIs} and automation tools in \textbf{Java}, supporting \textbf{50K+ daily transactions} and saving \textbf{20+ hours/week}.
+    \item Improved production stability by automating ingestion monitoring \& \textbf{SQL job validation}, reducing recurring failures and downtime.
+
+    
     \end{highlights}
 \end{onecolentry}
 
 
-
+% \vspace{-2 mm}
 % Projects
 \section{Projects}
 
+
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \href{https://animatrix28.github.io/Contortion/}{\textbf{Contortion – 2D Platformer Game}  | Unity, C\#, Firebase, GitHub {\scriptsize \faLink}} & October 2024 – December 2024 \\
+    \textbf{Animatrix AI Agent - Product Review Aggregator}\\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-4mm}
 \begin{onecolentry}
     \begin{highlights}
+        % \item Building an \textbf{AI Agent} that pulls multi-merchant product data using \textbf{SerpAPI} and \textbf{ScraperAPI}, then stores structured price, feature, and review information in a \textbf{Postgres} (Supabase) pipeline for fast search and comparison.
+        
+        \item Designed and built \textbf{Python} backend services to ingest, normalize, and store external product data using \textbf{SerpAPI} into a \textbf{Postgres (Supabase)} pipeline.
+        \item Implemented \textbf{Redis}-backed worker queues for parallel scraping, retries, and task orchestration, enabling scalable product analysis and data enrichment.
+        \item Integrated structured storage of product metadata and \textbf{LLM} summaries in \textbf{MongoDB} and designed the system to support new data sources without disrupting existing workflows.
+        
+        % Designed a flexible system, allowing new data sources and processing stages to be added without breaking existing workflows.
+        
+        % \item Phase 1- Automating product discovery, link collection, price extraction, and \textbf{LLM}-generated summaries for features and reviews using \textbf{Redis}-backed worker queues to support parallel scraping, priority tasks, daily sync jobs, and weekly price-update checks.
+        % \item Expanding the system with product matching, semantic search, and frontend integration with a personalized recommendation model.
+        % \item Incorporating agentic AI patterns (task orchestration \& tool calling), \textbf{RAG} pipelines for enhanced product analysis, and exploring model fine-tuning to improve summarization quality. 
 
-        \item Built \textbf{core game mechanics}, including gravity manipulation, teleportation, and interactive dynamic obstacles, using \textbf{Unity} and \textbf{C\#}.
-        \item Integrated real-time analytics with \textbf{Firebase} and \textbf{Python}, tracking player interactions, deaths, and level progression for balancing and gameplay improvements.
-        \item  \textbf{Enhanced UI/UX} and level design through iterative \textbf{playtesting}, enhancing game balance, engagement, and user experience.
+    \end{highlights}
+\end{onecolentry}
+
+% \vspace{0.0 cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \href{https://animatrix28.github.io/Contortion/}{\textbf{Contortion – 2D Platformer Game} {\scriptsize \faLink}}\\
+\end{tabularx}
+\vspace{-4mm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed gravity and environment-manipulation mechanics, integrated real-time analytics with \textbf{Firebase} and \textbf{Python} to track player behaviors and tuned levels using data-driven playtests.
 
         % \item Developed Contortion, a 2D puzzle-platformer with environment manipulation mechanics, allowing players to flip gravity and navigate dynamic obstacles.
         % \item Designed and implemented game physics, level design, and UI, integrating unique gameplay mechanics like teleportation, gravity toggles, and obstacle interaction.
@@ -276,19 +312,21 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Trave
     \end{highlights}
 \end{onecolentry}
 
-\vspace{0.1 cm}
+% \vspace{0.0 cm}
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \href{https://usstock-git-main-animesh-srivastavas-projects-215ba52f.vercel.app/}{\textbf{US Stock Market Portfolio}  | React.js,Express.js,Node.js,MongoDB,Android,GCP, jQuery,Flask,AWS {\scriptsize \faLink}} & March 2024 \\
+    \href{https://usstock-git-main-animesh-srivastavas-projects-215ba52f.vercel.app/}{\textbf{US Stock Market Portfolio} {\scriptsize \faLink}}\\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-4mm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Built a \textbf{responsive}, full-stack stock market analysis platform using \textbf{React.js}, \textbf{Bootstrap}, and \textbf{Node.js}, enabling seamless integration of real-time stock data fetched from \textbf{Finnhub API} with \textbf{MongoDB} backend and deployed the application on \textbf{AWS}.
-        \item Implemented \textbf{RESTful APIs} in the backend for real-time updates on price history, market trends, and user-specific portfolio tracking, enhancing usability and system reliability.
-        \item Developed an \textbf{Android} application '\textbf{Stocks}' in \textbf{Java} using the same \textbf{Node.js} backend ensuring cross-platform accessibility. 
-        \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
-        \item Previously built an earlier version in \textbf{Flask} with \textbf{jQuery} and \textbf{AJAX} using \textbf{Finnhub API}, deployed on \textbf{Google Cloud}.
+
+        \item Built full-stack platform using \textbf{React} and \textbf{Node} designing \textbf{REST APIs} for real-time stock market data and optimizing \textbf{MongoDB} queries cutting API response time by 20\%.
+        \item Developed shared backend services, deployed on \textbf{AWS} (EC2/S3/CloudFront) and built a companion \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textbf{{Android}}} app, ensuring consistent cross-platform behavior between Web and Android app.
+        
+        % \item Built a responsive full-stack stock analysis platform (\textbf{React} + \textbf{Node}) with Finnhub real-time data and MongoDB storage.
+        % \item Designed \textbf{REST APIs} for price history, portfolio tracking, and market news and optimized MongoDB queries to cut API response times by approximately 20\%.
+        % \item Deployed on \textbf{AWS} (EC2 + S3 + CloudFront) and built a companion \textbf{Android} app using the same backend to ensure consistent cross-platform behavior. \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
     \end{highlights}
 \end{onecolentry}
 
@@ -306,31 +344,86 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Trave
 %     \end{highlights}
 % \end{onecolentry}
 
-\vspace{0.1 cm}
+% \vspace{0.0 cm}
 
 
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \href{https://ieeexplore.ieee.org/document/9824468}{\textbf{Trip Planner and Recommender using Flutter and Tensorflow,} | Flutter, TensorFlow, Python} & January 2021 – June 2021 \\ 
-    \textbf{\textit{\href{https://ieeexplore.ieee.org/document/9824468}{"Published research paper at IEEE" {\scriptsize \faLink}}}}  \\
-\end{tabularx}
-\vspace{-3mm}
+% \begin{tabularx}{\textwidth}{@{}Xr@{}}
+%     \href{https://ieeexplore.ieee.org/document/9824468}{\textbf{Trip Planner and Recommender using Flutter and Tensorflow}, "Published research paper at IEEE"}\\
+% \end{tabularx}
+% \vspace{-4mm}
 
+% \begin{onecolentry}
+%     \begin{highlights}
+
+%         \item Built a \textbf{recommendation engine} using \textbf{TensorFlow}, designed an \textbf{ETL} pipeline to process TripAdvisor data and deployed a \href{https://drive.google.com/file/d/1SqoTyr8t58EnMv1kMaBpob6GxTtL8CKe/view}{{\textbf{{Flutter}}}}-based app for customized itinerary creation.
+        
+%         % \item Built a \textbf{recommendation engine} using \textbf{TensorFlow} and \textbf{collaborative/content} filters and designed an \textbf{ETL} pipeline to process TripAdvisor data.
+%         % \item Designed and deployed a \textbf{Flutter}-based app integrating the recommendation model to provide tailored suggestions and allowing the user to create a customized itinerary. \href{https://drive.google.com/file/d/1SqoTyr8t58EnMv1kMaBpob6GxTtL8CKe/view}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
+%     \end{highlights}
+% \end{onecolentry}
+
+% \vspace{0.0 cm}
+
+% \begin{tabularx}{\textwidth}{@{}Xr@{}}
+%     \href{https://ieeexplore.ieee.org/document/9417881}{\textbf{A Conceptual Model Simulation to Detect and Report City Traffic Violations Using Distributed Intelligent Agents}, "Published research paper at IEEE" {\scriptsize \faLink}}\\
+% \end{tabularx}
+% \vspace{-2mm}
+% \begin{onecolentry}
+%     \begin{highlights}
+%         \item Designed a simulation model in \textbf{Java} for detecting and reporting traffic violations in real-time using \textbf{multi-threading} and integrated it with \textbf{MySQL} for scalable database support enabling automatic updating of traffic violation records.
+%     \end{highlights}
+% \end{onecolentry}
+
+% \vspace{0.0 cm}
+
+% \begin{tabularx}{\textwidth}{@{}Xr@{}}
+%     \textbf{Multi-LoRA Integration Pipeline} & March 2025 – April 2025 \\
+% \end{tabularx}
+% \vspace{-4mm}
+% \begin{onecolentry}
+%     \begin{highlights}
+%         \item Built a \textbf{Multi-LoRA} integration pipeline for \textbf{diffusion models} to generate multiple distinct characters in a single image without blending features.
+%         \item Wrote algorithms to dynamically adjust model layer weights, ensuring specific character traits remain isolated during image generation.
+%         \item Developed an automated image refinement tool that detects and regenerates specific faces to fix identity errors in complex scenes.
+%     \end{highlights}
+% \end{onecolentry}
+
+% \vspace{0.0 cm}
+
+% \begin{tabularx}{\textwidth}{@{}Xr@{}}
+%     \textbf{Banking Application via Java Sockets} & June 2020 – July 2020 \\
+% \end{tabularx}
+% \vspace{-4mm}
+% \begin{onecolentry}
+%     \begin{highlights}
+%         \item Developed a multi-threaded banking system using \textbf{Java Sockets} to handle simultaneous transactions from multiple clients without data conflicts.
+%         \item Integrated \textbf{SQL Server} via \textbf{JDBC} to securely store account records and ensure data consistency during concurrent deposits and withdrawals.
+%         \item Built a custom network protocol to manage real-time communication between the server and client applications.
+%     \end{highlights}
+% \end{onecolentry}
+
+% \vspace{0.0 cm}
+
+% \begin{tabularx}{\textwidth}{@{}Xr@{}}
+%     \textbf{Mini-Compiler for C Subset} & May 2020 – June 2020 \\
+% \end{tabularx}
+% \vspace{-4mm}
+% \begin{onecolentry}
+%     \begin{highlights}
+%         \item Developed a compiler for a subset of C using \textbf{Lex} and \textbf{Yacc}, capable of parsing 2D arrays, loops, and custom control structures.
+%         \item Implemented context-free grammar rules to validate code syntax and report specific line-number errors for invalid programs.
+%     \end{highlights}
+% \end{onecolentry}
+
+% \vspace{-1 mm}
+
+% Research Papers
+\section{Research Papers}
 \begin{onecolentry}
     \begin{highlights}
-        \item Scraped TripAdvisor data \& utilized \textbf{ETL} techniques \& developed a trip-planning \textbf{recommendation system} using \textbf{TensorFlow} and \textbf{collaborative} \& \textbf{content-based} filtering techniques, delivering highly personalized suggestions based on user preferences.
-        \item Designed and deployed a \textbf{Flutter}-based app with a seamless interface, integrating the recommendation model to provide tailored suggestions based on individual preferences and interests. Incorporated user feedback for a cohesive and visually appealing experience. \href{https://drive.google.com/file/d/1SqoTyr8t58EnMv1kMaBpob6GxTtL8CKe/view}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
-    \end{highlights}
-\end{onecolentry}
-
-\vspace{0.1 cm}
-
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \href{https://ieeexplore.ieee.org/document/9417881}{\textbf{A Conceptual Model Simulation to Detect and Report City Traffic Violations Using Distributed Intelligent Agents, "Published research paper at IEEE"} | Java, MySQL {\scriptsize \faLink}} & February 2020 – July 2020 \\
-\end{tabularx}
-\vspace{-3mm}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Designed a simulation model in \textbf{Java} for detecting and reporting traffic violations in real-time using the \textbf{multi-threading} concept, integrating it with \textbf{MySQL} for scalable database support enabling automatic updating of traffic violation records.
+        \item \href{https://ieeexplore.ieee.org/document/9824468}{\textbf{Trip Planner and Recommender using Flutter and Tensorflow} - "IEEE"}
+        \vspace{-0.1 cm}
+        \item \href{https://ieeexplore.ieee.org/document/9417881}{\textbf{Conceptual Model Simulation to Detect and Report City Traffic Violations Using Distributed Intelligent Agents} - "IEEE"}
     \end{highlights}
 \end{onecolentry}
 
@@ -338,19 +431,18 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} \& \textbf{Trave
 \section{Skills}
 \begin{onecolentry}
 
-\textbf{Programming Languages:} Python, Java, C, JavaScript, TypeScript, C++, Dart  \\
-\textbf{Web and Backend:} React.js, Node.js, Express.js, Flask, Django, Angular, jQuery, HTML, CSS, XML \\
-\textbf{Game Development:} Unity, C\# \\
-\textbf{Mobile Application Development:} Flutter, React Native, Java, Android Studio \\
-\textbf{Database \& Tools:} MySQL, PL/SQL, MongoDB, Firebase, Hive \& Spark, OFSAA, Hadoop, NoSQL, DynamoDB \\
-\textbf{Cloud \& DevOps:} AWS, Google Cloud, Git, GitHub Actions, Docker \\
-\textbf{Other Tools:}  Figma, Jira, Photoshop \\
-\textbf{Methodologies:} Agile, Scrum, CI/CD Pipelines
+\textbf{Languages \& Frameworks:} Python, Java, JavaScript, TypeScript, C/C++, Dart, React.js, Node.js, Express.js, Flask, Django, HTML, CSS  \\
+\textbf{Database:} MySQL, PL/SQL, MongoDB, Redis(Caching, Queuing), PostgreSQL, Hive, Spark, NoSQL, DynamoDB, Firebase, Qdrant \\
+\textbf{AI \& ML:} Strands, LangGraph, LangChain, RAG, Agentic AI, TensorFlow \\
+\textbf{Cloud \& DevOps:} AWS(EKS, EC2, S3, Lambda), Google Cloud(App Engine), Docker, GitHub Actions, REST APIs, GraphQL, OFSAA, Git \\
+\textbf{Mobile and Game Development:} Android(Java, Android Studio), React Native, Unity, C\#, Flutter, Figma \\
 
 \end{onecolentry}
 
+
+
 % Footer Section
-% \vspace{0.5 cm}
+% \vspace{0.4 cm}
 % \begin{onecolentry}
 %     \centering
 %     {1/1}
