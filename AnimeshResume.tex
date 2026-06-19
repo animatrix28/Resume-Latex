@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, 
-    top=0.7 cm, % reduced top margin
+    top=0.4 cm, % reduced top margin
     bottom=0.5 cm, % reduced bottom margin
-    left=0.6 cm, % reduced left margin
-    right=0.6 cm, % reduced right margin
+    left=0.5 cm, % reduced left margin
+    right=0.5 cm, % reduced right margin
     footskip=0.8 cm,
 ]{geometry}
 \usepackage{titlesec}
@@ -77,9 +77,9 @@
 \titlespacing{\section}{
     -1pt
 }{
-    0.2 cm
+    0.15 cm
 }{
-    0.2 cm
+    0.15 cm
 }
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
@@ -87,8 +87,8 @@
 % Custom environments
 \newenvironment{highlights}{
     \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
+        topsep=0.06 cm,
+        parsep=0.06 cm,
         partopsep=0pt,
         itemsep=0pt,
         leftmargin=0 cm + 10pt
@@ -122,9 +122,9 @@
 
 % Header
 \begin{header}
-    \fontsize{21 pt}{21 pt}\selectfont \textbf{Animesh Srivastava}
+    \fontsize{20 pt}{20 pt}\selectfont \textbf{Animesh Srivastava}
 \end{header}
-\vspace{2 pt}
+% \vspace{1 pt}
     
 % \begin{onecolentry}
 
@@ -179,7 +179,7 @@
 \vspace{-4.5mm}
 \begin{onecolentry}
 
-    Master of Science in Computer Science (GPA: 3.6/4)\\
+    Master of Science in Computer Science (GPA: 3.7/4)\\
     % Courses: Algorithms, Database, Web Development, Mobile Game Development, Advanced Computer Vision
 \end{onecolentry}
 
@@ -203,30 +203,35 @@ Bachelor of Technology in Computer Science and Engineering\\
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
     \textbf{Software Engineer, Easley Dunn Productions} | Los Angeles, USA & \textbf{June 2025 – Present} \\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 \begin{onecolentry}
     \begin{highlights}
     % \item[--] Built a VR surgical-training prototype in \textbf{Unity (C\#)} with session record-and-replay using a JSON-based format for trainer analytics. 
     % \item[--] Designed diegetic floating UI with interaction analytics, increasing UI engagement by \textbf{approx 20\%,} and improving task flow.
     
     % \item[--] Built a VR surgical-training prototype in \textbf{Unity (C\#)} with session record-and-replay, diegetic floating UI and interaction analytics, improving task flow and increasing UI engagement by 20\%.
-    \item[--] Built VR surgical training prototype in Unity(C\#) with JSON-based session replay \& diegetic UI, improving user interaction by 20\%.
+    % \item[--] Built VR surgical training prototype in Unity(C\#) with JSON-based session replay \& diegetic UI, improving user interaction by 20\%.
     % Designed physics-driven interactions and a diegetic Floating UI to make tools behave naturally, improving task completion rates in user studies.
     % \item[--] Developed a floating UI for quick surgical tool switching, improving ease-of-use and overall training experience. 
+    \item[--] Shipped a diegetic floating UI for in-headset tools and scene switching, \textbf{increasing user interaction by 20\%}
+    \item[--] Implemented physics‐driven tool interactions to mirror real surgical handling, improving task completion during early user testing
+    \item[--] Architected a VR surgical training prototype in Unity (C\#), developing a JSON-based session record-and-replay system that enabled post-training playback, helping users identify procedural errors and improve surgical technique through iterative practice
     \end{highlights}
 \end{onecolentry}
 \vspace{0.0 cm}
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Full Stack Software Engineer(Founding Engineer), Redvest} | Los Angeles, USA & \textbf{May 2024 – October 2024} \\
+    \textbf{Founding Software Engineer - Full Stack, Redvest} | Los Angeles, USA & \textbf{May 2024 – October 2024} \\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 
 \begin{onecolentry}
     \begin{highlights}
 
-        \item[--] Architected multithreaded \textbf{Python} ingestion pipelines for real-time financial analytics, reducing end-to-end data latency by 40\%.
-        \item[--] Designed and deployed containerized backend services (\textbf{Node.js/Python}) on \textbf{AWS EKS}, implementing scalable KPI monitoring systems that eliminated 60\% of manual reconciliation work.
-        \item[--] Led core feature development across backend and API layers, improving efficiency and boosting user engagement by 20\% and presented product at TechCrunch Disrupt 2024.
+        \item[--] Architected multithreaded Python ingestion pipelines for real-time financial analytics, \textbf{cutting end-to-end data latency by 40\%}
+        \item[--] Deployed containerized backend services on AWS EKS using Node.js, TypeScript, and Python, with automated monitoring that \textbf{eliminated 60\% of manual reconciliation work}
+        \item[--] Led backend and API feature development with automated test coverage and reliability fixes, \textbf{boosting user engagement by 20\%}
+        \item[--] Delivered real-time analytics dashboards in React and TypeScript to visualize financial and KPI metrics, supporting a \textbf{live product demo} at \textbf{TechCrunch Disrupt 2024}
+        % and presented product at TechCrunch Disrupt 2024.
     
         % \item[--] Reduced financial data latency by 40\% by building \textbf{multithreaded Python data pipelines} and optimizing \textbf{Firebase} ingestion. 
         % \item[--] Built and deployed internal analytics dashboards using \textbf{React} and \textbf{Node/Python} backend services, containerized with \textbf{Docker} and orchestrated on \textbf{AWS EKS} to support scalable KPI monitoring, reducing manual data checks by \textbf{60\%}.
@@ -239,14 +244,12 @@ Bachelor of Technology in Computer Science and Engineering\\
 
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Software Engineer, American Express}(via TCS) | Bangalore, India & \textbf{January 2021 – July 2023} \\
+    \textbf{Software Engineer, American Express} | Bangalore, India & \textbf{January 2021 – July 2023} \\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 
 \begin{onecolentry}
 
-Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Travel and Lifestyle Services}
-\vspace{-1mm}
     \begin{highlights}
         % \item[--] Enhanced regulatory compliance by \textbf{reducing data risks} by\textbf{ 50\%} using \textbf{OFSAA} and \textbf{PL/SQL} to validate and migrate 30+ guidelines onto IDL local servers.
         % \item[--] Automated report retrieval, data comparison, and discrepancy resolution with \textbf{Java}, saving 20 hours per week of manual work. Ensured fault-tolerant server communication and migration using \textbf{Putty} and \textbf{PL/SQL}.
@@ -277,13 +280,15 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 % \item[--] Automated \textbf{RBI-compliant} data localization validation by migrating 30+ regulatory rules, reducing compliance risk by 50\%.
 % \item[--] Designed and optimized \textbf{PL/SQL} procedures and data quality validation layers across production tiers, improving consistency and reducing recurring ingestion failures by \textbf{20\%}.
 % \item[--] Built internal \textbf{REST APIs} and \textbf{Java}-based automation tools supporting 50K+ daily transactions, eliminating \textbf{20+ manual} engineering hours per week, and also \textbf{eliminating manual report comparisons}.
-    \item[--] Engineered distributed ETL pipelines using \textbf{Python, PySpark, PL/SQL, and Hive}, implementing automated cross-system validation and reconciliation checks to achieve \textbf{100\% daily consistency} across \textbf{OFSAA, Oracle, and MongoDB}.
+    \item[--] Engineered distributed ETL pipelines in Python, PySpark, PL/SQL, and Hive, with automated cross-system validation that \textbf{achieved 100\% daily reconciliation accuracy} across OFSAA, Oracle, and MongoDB
 
-    \item[--] Automated RBI data localization compliance by migrating 30+ validation rules in \textbf{ETL pipelines}, reducing regulatory risk by 50\%.
+    \item[--] Migrated 30+ RBI data-localization rules into the validation pipeline, \textbf{cutting regulatory compliance risk by 50\%}
     
-    \item[--] Optimized high-volume \textbf{PL/SQL} procedures and ETL jobs by refactoring queries, indexing critical tables, and introducing data quality checkpoints, reducing recurring production failures by \textbf{20\%}.
+    \item[--] Optimized high-volume PL/SQL procedures with automated data-quality checkpoints, \textbf{cutting recurring production failures by 20\%}
     
-    \item[--] Built internal \textbf{REST APIs} and multithreaded \textbf{Java} automation tools supporting \textbf{50K+ daily transactions}, automating report comparisons and saving \textbf{20+ engineering hours/week}.
+    \item[--] Built internal REST APIs and multithreaded Java automation tools with automated report validation, \textbf{supporting 50K+ daily transactions and saving 20+ hrs/week}
+
+    \item[--] \textbf{Mentored 2 junior engineers} on PL/SQL and ETL best practices, and partnered with QA to add regression coverage for critical reconciliation jobs
     \end{highlights}
 \end{onecolentry}
 
@@ -294,9 +299,9 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 
 
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Animatrix AI Agent - Product Review Aggregator}\\
+    \textbf{Product Review Aggregator AI Agent}\\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 \begin{onecolentry}
     \begin{highlights}
         % \item[--] Building an \textbf{AI Agent} that pulls multi-merchant product data using \textbf{SerpAPI} and \textbf{ScraperAPI}, then stores structured price, feature, and review information in a \textbf{Postgres} (Supabase) pipeline for fast search and comparison.
@@ -311,21 +316,8 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 
         % \item[--] Developed a search-first API and real-time update flow using \textbf{REST} and \textbf{WebSockets}, allowing users to trigger high-priority product analysis jobs and receive live results once background processing completes.
 
-\item[--] Built a \textbf{distributed AI product} intelligence system that aggregates multi-source product reviews and pricing data, performs \textbf{LLM}-based sentiment and feature extraction, and generates structured product insights in near real time.
-
-\item[--] Designed a \textbf{Retrieval-Augmented Generation (RAG)} pipeline using \textbf{Qdrant} for vector search over embedded review corpora, enabling context-aware summarization and feature comparison grounded in retrieved evidence.
-
-\item[--] Implemented \textbf{LLM-driven AI agent} task orchestration with \textbf{Celery} and \textbf{Redis} to coordinate multi-step workflows (scraping, embedding generation, retrieval, LLM reasoning, and price normalization), ensuring scalable and fault-tolerant AI processing.
-
-
-        
-
-        
-        % Designed a flexible system, allowing new data sources and processing stages to be added without breaking existing workflows.
-        
-        % \item[--] Phase 1- Automating product discovery, link collection, price extraction, and \textbf{LLM}-generated summaries for features and reviews using \textbf{Redis}-backed worker queues to support parallel scraping, priority tasks, daily sync jobs, and weekly price-update checks.
-        % \item[--] Expanding the system with product matching, semantic search, and frontend integration with a personalized recommendation model.
-        % \item[--] Incorporating agentic AI patterns (task orchestration \& tool calling), \textbf{RAG} pipelines for enhanced product analysis, and exploring model fine-tuning to improve summarization quality. 
+\item[--] Architected a distributed AI product-intelligence system that aggregates multi-source reviews and pricing data, using automated LLM evaluation to extract sentiment and surface structured insights in \textbf{near real time}
+\item[--] Built a \textbf{Qdrant}-backed RAG pipeline with retrieval validation and LangGraph-style agent orchestration on Celery and Redis for scalable, fault-tolerant processing
 
     \end{highlights}
 \end{onecolentry}
@@ -335,7 +327,7 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
     \href{https://usstock-git-main-animesh-srivastavas-projects-215ba52f.vercel.app/}{\textbf{US Stock Market Portfolio}}\\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 \begin{onecolentry}
     \begin{highlights}
 
@@ -344,16 +336,9 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 
         
 
-    \item[--] Designed and implemented \textbf{RESTful} backend services in \textbf{Node.js} and \textbf{Express} for real-time stock data ingestion, portfolio tracking, and historical price analytics, optimizing MongoDB queries to reduce API response time by 20\%.
+    \item[--] Built RESTful backend services in Node.js, TypeScript, and Express for real-time stock data, portfolio tracking, and price analytics, optimizing MongoDB queries to cut API response time by \textbf{20\%}
+    \item[--] Shipped a React/TypeScript \textbf{web app} and a companion \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textbf{Android}} app on a \textbf{shared backend API layer}, deployed on AWS for consistent multi-client behavior
 
-    \item[--] Built a \textbf{React}-based web application and a companion \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textbf{{Android}}} app that consumed a shared backend API layer, designing the backend to support multi-client access with consistent logic and scalable deployment on \textbf{AWS (EKS, EC2, S3, CloudFront)}.
-
-
-
-        
-        % \item[--] Built a responsive full-stack stock analysis platform (\textbf{React} + \textbf{Node}) with Finnhub real-time data and MongoDB storage.
-        % \item[--] Designed \textbf{REST APIs} for price history, portfolio tracking, and market news and optimized MongoDB queries to cut API response times by approximately 20\%.
-        % \item[--] Deployed on \textbf{AWS} (EC2 + S3 + CloudFront) and built a companion \textbf{Android} app using the same backend to ensure consistent cross-platform behavior. \href{https://drive.google.com/drive/u/2/folders/1a4LrLwlGwCV0PFq6JoiWhEciJ8c7Cd_4}{\textit{\textbf{\textcolor{blue}{(Link to the App)}}}}
     \end{highlights}
 \end{onecolentry}
 
@@ -361,13 +346,13 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
     \textbf{Multi-LoRA(Low Rank Adaption) Integration Pipeline}\\
 \end{tabularx}
-\vspace{-4mm}
+\vspace{-4.5mm}
 \begin{onecolentry}
     \begin{highlights}
         % \item Built a system that keeps multiple characters visually distinct in \textbf{AI-generated images} by controlling where and how each character’s features are applied inside a \textbf{diffusion model}, reducing identity mixing by \textbf{58\%}.
         % \item Implemented region-based attention and adapter blending on the \textbf{FLUX diffusion model}, and validated improvements using \textbf{CLIP alignment} and \textbf{ArcFace}-based identity metrics through large-scale GPU experiments. 
-\item[--] Developed a \textbf{multi-adapter LoRA} blending system for diffusion models to preserve character identity across AI-generated images, reducing feature mixing by 58\%.
-\item[--] Implemented region-based attention control and adapter blending on the \textbf{FLUX diffusion model} and validated improvements using \textbf{CLIP alignment} and \textbf{ArcFace} identity metrics across large-scale GPU experiments.  
+\item[--] Engineered a multi-adapter LoRA blending system for diffusion models to preserve character identity across AI-generated images, cutting feature mixing by \textbf{58\%}
+\item[--] Applied \textbf{region-based attention control} on the FLUX diffusion model, validating gains via CLIP alignment and ArcFace identity metrics across large-scale GPU experiments
     \end{highlights}
 \end{onecolentry}
 
@@ -478,19 +463,19 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 %     \end{highlights}
 % \end{onecolentry}
 
-\vspace{-2 mm}
+% \vspace{-1.5 mm}
 
 % Research Papers
 \section{Research Papers}
 \begin{onecolentry}
-\vspace{-3 mm}
+\vspace{-2.5 mm}
     \begin{highlights}
         \item[--] \href{https://ieeexplore.ieee.org/document/9824468}{\textbf{Trip Planner and Recommender using Flutter and Tensorflow} - "IEEE, 2022"}
         \vspace{-0.1 cm}
         \item[--] \href{https://ieeexplore.ieee.org/document/9417881}{\textbf{Conceptual Model Simulation to Detect and Report City Traffic Violations Using Distributed Intelligent Agents} - "IEEE, 2021"}
     \end{highlights}
 \end{onecolentry}
-\vspace{-2 mm}
+% \vspace{-1.5 mm}
 % Skills
 % \section{Skills}
 % \begin{onecolentry}
@@ -504,13 +489,14 @@ Worked on two projects, \textbf{IDL (Indian Data Localization)} and \textbf{Trav
 % \end{onecolentry}
 
 \section{Skills}
-\vspace{-1 mm}
+% \vspace{-0.5 mm}
 \textbf{Languages:} Python, Java, C, C++, SQL, JavaScript, TypeScript, React.js, Angular, C\#, Dart\\
 \textbf{Core:} Distributed Systems, Multithreading, Memory Management, REST APIs, GraphQL \\
 \textbf{Backend:} Node.js, Flask, Django, Express.js, Event-Driven Architecture, WebSockets \\
-\textbf{AI Systems:} Generative AI(LLMs), RAG, LangChain, LangGraph, Vector Databases (Qdrant), Agentic AI, Diffusion Models \\
-\textbf{Cloud \& DevOps:} Google Cloud(GCP), AWS(EKS, EC2, S3, Lambda), Microsoft Azure, Docker, Terraform, CI/CD(Github Actions) \\
+\textbf{AI Systems:} LLM Evaluation, Generative AI(LLMs), RAG, LangChain, LangGraph, Qdrant, Agentic AI, Diffusion Models \\
+\textbf{Cloud \& DevOps:} Kubernetes, Docker, AWS(EKS, EC2, S3, Lambda), Google Cloud(GCP), Microsoft Azure, Terraform, CI/CD \\
 \textbf{Data Engineering:} PySpark, Hive, PostgreSQL, MongoDB, Redis, PL/SQL, MySQL \\
+\textbf{Testing:} GitHub Actions, Pytest, Playwright, Selenium, API Testing, Unit Testing, Regression Testing, Automation Frameworks
 
 
 
